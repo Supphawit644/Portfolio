@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/11e08f137c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#" class="logo"><span>B</span>EER.COM</a> 
+            <ul id="sidemenu">
+                <li><a href="#header" class="buttonhome">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome to the Website</p>
+            <h1>Hello, my name is <br><span>Supphawit Jaingam</span></h1>
+        </div>
+    </div>
+</div> 
+<!-- -------------------------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I’m a student in Information and Communication Engineering who enjoys exploring technology — from web development and AI to telecommunications systems. <br>
+                    I’ve worked on projects involving website design, IoT integration using ESP8266, and basic network setup like LAN cable installation and network analysis. <br> <br>
+                    I’m passionate about creating technology that’s easy to use and truly helpful in everyday life, and I’m always open to learning new tools and building meaningful solutions.
+                </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Networking Fundamentals</span><br>LAN/WAN, cable management</li>
+                            <li><span>Network Troubleshooting</span><br>IP analysis, ping test</li>
+                            <li><span>HTML & CSS</span><br>Basic level</li>
+                            <li><span>Computer Literacy</span><br>Windows OS, Office tools</li>
+                            <li><span>Teamwork</span><br>Work effectively with others to achieve shared technical goals</li>
+                            <li><span>Adaptability</span><br>Quick to learn new technologies and adjust to different environments</li>
+                            <li><span>Responsibility</span><br>Take ownership of assigned tasks and ensure completion</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - 2025</span><br><p class="highlight-company">Centara Grand Beach Resort & Villas Hua Hin</p>IT Support – Client-facing IT Support, troubleshooting hardware and software issues </li>
+                            <li><span>2023 - 2024</span><br><p class="highlight-company">Swensen’s, Big C Phetchaburi</p> Coline – Decorated ice cream and served customers <br>Washer – Cleaned kitchen equipment and workstations</li>
+                            <li><span>2021 - 2022</span><br><p class="highlight-company">The Villa Cha-Am</p>Housekeeper – Responsible for room cleaning and maintaining guest areas</li>
+                            <li><span>2020 - 2021</span><br><p class="highlight-company">Sheraton Hua Hin</p>F&B Server – Provided customer service in the food and beverage department <br>Event Staff – Assisted in setting up venues and operating event-related equipment</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>I graduated from Phetchaburi Rajabhat University with a major in Information and Communication Engineering and <br> a GPA of 3.33</li>
+                            <li><span>2018 - 2020</span><br>I graduated from Hua Hin School with a major in Science and Mathematics and a GPA of 3.21</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------services------------ -->
+ <div id="services">
+      <div class="container">
+         <h1 class="sub-title">My Services</h1>   
+         <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Development</h2>
+                <p>I can build simple and responsive websites using HTML, CSS, and JavaScript. One of my projects includes creating a website that shows real-time data from an ESP8266 board.
+                   I focus on clean design and easy-to-use layouts.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>IoT and Web Integration</h2>
+                <p>I have experience working with the ESP8266 to connect hardware with the web. I can help display sensor values or device status live on a website.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Windows & Software Setup</h2>
+                <p>I can install Windows operating systems, basic programs, and fix small computer issues. Perfect for personal or small business needs.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+         </div>
+      </div>
+ </div>
+
+<!-- ----------------------Portfolio-------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+          <div class="work-list">
+                <div class="work">
+                    <img src="img/account2.png">
+                    <div class="layer">
+                         <h3>Education App UI Design</h3>
+                         <p>Student Schedule & Homework App – UI Design I designed a mobile app interface to help students manage their class schedules and homework.
+                            The app features a class calendar, attendance tracking, assignments, and account management — all presented in a clean and user-friendly layout to make studying more organized.
+                        </p>
+                         <a href="https://www.figma.com/design/gjNl9vxJmWu9ImiU33OqMP/Attendance-App--Community-?node-id=0-1&p=f&t=WcSwUHyAdCLqLgex-0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/Avenue.png">
+                    <div class="layer">
+                         <h3>Clothing Website Design (Webflow)</h3>
+                         <p>I designed and built a clothing website using Webflow. The site includes sections for product showcases, brand identity, and responsive layouts — suitable for online fashion stores.
+                        </p>
+                         <a href="https://home-3f7477.webflow.io/#about" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/web-iot.png">
+                    <div class="layer">
+                         <h3>Real-Time Sensor Data Display using ESP8266</h3>
+                         <p>I developed a project using the ESP8266 microcontroller to collect real-time sensor data and display it on a custom-built website. This project involved reading values from a sensor (e.g., pH or water level), sending the data via Wi-Fi, and rendering the results in a web interface.
+                            It helped me gain experience in IoT, web integration, and working with real-time data systems.</p>
+                         <a href="https://supphawit644.github.io/Project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+          </div> 
+          <a href="#" class="btn">See more</a>  
+    </div>
+</div>
+
+<!-- --------------------------contact---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+             <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>supphawit46@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0952582135</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/beersupavit.jaikam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bebeer.z/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+             </div>
+             <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+             </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Beer. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        //event.currentTarget.classList.add("active-link"); = ทำให้ขีดเส้นใต้สีแดงขึ้นตรงที่เรากดที่กำหนด/ 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxTj3hkXSCWczM-mgL7zhXbH33zk87YrFjlNRN2Vc539ksveuZI8jRQ4co3kRoJEAVJhQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>
+</html>
